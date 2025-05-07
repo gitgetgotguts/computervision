@@ -1,10 +1,14 @@
+MODEL_NAME = "hand_gesture_model.pkl"
+TRAINING_DATA_PATH = "training/normalized_data.csv"
+
 # pip install pandas scikit-learn joblib
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 import joblib
 import pandas as pd
-df=pd.read_csv("/home/saioo/Desktop/py/training/unnormalized_data.csv")
+
+df=pd.read_csv(TRAINING_DATA_PATH)
 # 4) Split into train/test
 X = df.drop("label", axis=1).values  # shape (N,63)
 y = df["label"].values               # shape (N,)
@@ -31,5 +35,5 @@ print("=== Confusion Matrix ===")
 print(confusion_matrix(y_test, y_pred))
 
 # 7) Save the trained model for later inference
-joblib.dump(model, "unnor_hand_gesture_model.pkl")
+joblib.dump(model, MODEL_NAME)
 print("\nModel saved to hand_gesture_model.pkl")

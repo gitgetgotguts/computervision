@@ -8,6 +8,12 @@ import subprocess
 import platform
 import time
 
+MODEL_NAME = "hand_gesture_model.pkl"
+# === 1) Load your trained model (once) ===
+model = joblib.load(MODEL_NAME)   # ← ADDED
+label_map = {0: "UP", 1: "DOWN", 2: "OTHER"}    # add the labels maps just like in the data.ipynb
+
+
 last_action_time = 0
 cooldown_period = 1.0  # 1 second cooldown between actions
 
@@ -63,9 +69,7 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(min_detection_confidence=0.6, min_tracking_confidence=0.9)
 mp_draw = mp.solutions.drawing_utils
 
-# === 1) Load your trained model (once) ===
-model = joblib.load("hand_gesture_model.pkl")   # ← ADDED
-label_map = {0: "UP", 1: "DOWN", 2: "OTHER"}    # ← ADDED
+
 
 # === 2) Normalization function (must match training) ===
 def normalize_landmarks(flat_landmarks):        # ← ADDED
