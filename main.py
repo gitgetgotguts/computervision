@@ -8,7 +8,7 @@ import subprocess
 import platform
 import time
 
-MODEL_NAME = "hand_gesture_model.pkl"
+MODEL_NAME = "mhand_gesture_model.pkl"
 # === 1) Load your trained model (once) ===
 model = joblib.load(MODEL_NAME)   # ← ADDED
 label_map = {0: "UP", 1: "DOWN", 2: "OTHER"}    # add the labels maps just like in the data.ipynb

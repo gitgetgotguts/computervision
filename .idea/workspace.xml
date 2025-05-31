@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45518f59-22f7-4749-8038-7e181be836ae" name="Changes" comment="" />
+    <list default="true" id="45518f59-22f7-4749-8038-7e181be836ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hand_gesture_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/hand_gesture_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/training/data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/normalized_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/training/normalized_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -22,6 +33,8 @@
   &quot;keyToString&quot;: {
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/saioo/Desktop/py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -29,6 +42,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Angular2Html&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -74,6 +92,25 @@
       <updated>1746049482584</updated>
       <workItem from="1746049484411" duration="488000" />
       <workItem from="1746202820245" duration="65000" />
+      <workItem from="1746623372612" duration="2000" />
+      <workItem from="1746633884448" duration="2000" />
+      <workItem from="1746713205976" duration="2000" />
+      <workItem from="1746714251050" duration="6000" />
+      <workItem from="1746716438565" duration="260000" />
+      <workItem from="1746856157793" duration="1000" />
+      <workItem from="1747427699761" duration="6000" />
+      <workItem from="1747607027219" duration="2000" />
+      <workItem from="1747631458767" duration="72000" />
+      <workItem from="1747655002870" duration="3000" />
+      <workItem from="1747681768005" duration="4000" />
+      <workItem from="1747688244983" duration="4000" />
+      <workItem from="1747688518171" duration="136000" />
+      <workItem from="1747760594862" duration="1000" />
+      <workItem from="1747775467202" duration="4000" />
+      <workItem from="1747865234796" duration="2000" />
+      <workItem from="1747874779065" duration="2000" />
+      <workItem from="1747907556599" duration="1000" />
+      <workItem from="1747911165389" duration="2000" />
     </task>
     <servers />
   </component>

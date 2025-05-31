@@ -1,5 +1,5 @@
-MODEL_NAME = "hand_gesture_model.pkl"
-TRAINING_DATA_PATH = "training/normalized_data.csv"
+MODEL_NAME = "mhand_gesture_model.pkl"
+TRAINING_DATA_PATH = "training/mouin_data.csv"
 
 # pip install pandas scikit-learn joblib
 from sklearn.model_selection import train_test_split
