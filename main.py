@@ -155,11 +155,21 @@ while webcam.isOpened():
 
             else:
                 if text=="UP":
-                    print("Volume Up")
-                    if is_linux:
-                        subprocess.run(["amixer", "-D", "pulse", "set", "Master", "5%+"])
-                    else:
-                        pyautogui.press("volumeup")
+                                        # Night vision effect for the whole frame
+                    # Convert to grayscale
+                    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                    # Apply a green color map
+                    night_vision = cv2.applyColorMap(gray, cv2.COLORMAP_SUMMER)
+                    # Optionally boost brightness
+                    night_vision = cv2.convertScaleAbs(night_vision, alpha=1.2, beta=30)
+                    # Overlay text for feedback
+                    cv2.putText(night_vision, text, (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 5)
+                    frame[:] = night_vision  # Replace the frame with the effect
+                    # print("Volume Up")
+                    # if is_linux:
+                    #     subprocess.run(["amixer", "-D", "pulse", "set", "Master", "5%+"])
+                    # else:
+                    #     pyautogui.press("volumeup")
                 elif text=="DOWN":
                     if is_linux:
                         subprocess.run(["amixer", "-D", "pulse", "set", "Master", "5%-"])
